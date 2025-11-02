@@ -4,6 +4,18 @@
     --primary-color: rgb(204, 186, 233); 
     --secondary-color: rgb(139, 96, 219);
     --wowie: rgb(252, 232, 255);
+    --font-standard: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    margin: 0;
+    border: 0;
+    padding: 0;
 }
 
 /*header formatting*/
@@ -22,16 +34,15 @@ nav {
     padding: 10px 10px 8px;
     justify-content: space-around;
 }
-.dropdown, header a {
+.dropdown, .main {
     width: 200px;
     height: 2rem;
     text-align: center;
     background-color: var(--secondary-color);
     font-size: x-large;
-    
-    text-decoration: none;
-    color: inherit;
+
     border-radius: 25px;
+    cursor: pointer;
 }
 
 .dropdown, #faq_link {
@@ -48,8 +59,27 @@ nav {
     background-color: var(--wowie);
     color: black;
     width: 125vh;
+    height: 50vh;
     position: relative;
     top: -20px;
+    text-align: left;
+    padding: 13px;
+    overflow: hidden;
+}
+
+.dcontent img {
+    float: right;
+    rotate: -15deg;
+    position: relative;
+    top: -60vh;
+    right: -20vh;
+    width: 100vh;
+}
+
+.dcontent a {
+    text-decoration: none;
+    color: inherit;
+    line-height: 10vh;
 }
 
 #d1 {
@@ -69,4 +99,152 @@ nav {
 
 .dropdown:hover .dcontent{
     display: block;
+}
+
+/*Makes an img span whole page*/
+
+#span-whole {
+    width: 100%;
+    height: 350px;
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+#over-img {
+    position: relative;
+    top: -180px;
+    margin-left: 20px;
+    font-size: 5pc;
+}
+
+/*img then box over it*/
+
+#box {
+    position: relative;
+    right: -5%;
+    top: -100px;
+    width: 850px;
+    height: 500px;
+    text-align: center;
+}
+
+.over-easy {
+    position: absolute;
+    background-color: var(--primary-color);
+    width: 330px;
+    height: 250px;
+
+    left: 55%;
+    top: 95%;
+    padding: 30px;
+    font-size: var(--font-standard);
+    text-align: left;
+}
+
+.over-easy button {
+    background-color: var(--secondary-color);
+    border: none;
+    width: 250px;
+    height: 50px;
+    position: relative;
+    top: 30%;
+    cursor: pointer;
+    font-size: x-large;
+}
+
+/*Activity Scroll*/
+#act {
+    margin-left: 5%;
+}
+
+#activity-scroll {
+    width: 65%;
+    display: flex;
+    margin-left: 5%;
+    justify-content: space-around;
+}
+.activity {
+    width: 30%;
+    height: 500px;
+    border-radius: 100px 100px 0px 0px;
+}
+
+#activity-scroll p {
+    background-color: var(--primary-color);
+    width: 30%;
+    height: fit-content;
+    font-size: var(--font-standard);
+    text-align: center;
+}
+
+#act h2 {
+    font-size: 50px;
+}
+
+#arrow {
+    font-size: 50px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+      
+    width: fit-content;
+    padding: 0px 10px;
+    cursor: pointer;
+    float: right;
+
+    position: relative;
+    top: -400px;
+    right: 15%;
+}
+
+#dots {
+    width: fit-content;
+    margin-left: 30%;
+    letter-spacing: 40px;
+    background-color: var(--primary-color);
+    padding: 0px 3px 0px 3%;
+    border-radius: 40px;
+
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Big Image at bottom with text under it */
+
+.on-top {
+    display: flex;
+    flex-direction: column;
+    margin: 5% 10%;
+}
+
+.big {
+    position: relative;
+    height: 550px;
+}
+
+.on-top button {
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: 100px;
+    margin-top: 2%;
+    font-size: xx-large;
+}
+
+/* footer */
+
+footer {
+    background-color: var(--primary-color);
+    padding: 1% 2%;
+    display: flex;
+    flex-direction: row;
+    column-gap: 2.5em;
+}
+
+/*activites section*/
+
+#activities {
+    margin: 5%;
+    margin-top: 10%;
 }

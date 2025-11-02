@@ -10,31 +10,78 @@
 
         <header>
             <nav>
-                <a href="home.html" id="home_link">Taniti</a>
+                <a href="home.html" id="home_link" class="main">Taniti</a>
                 <div class="dropdown">
                     <span>The Island</span>
-                    <p class="dcontent" id="d1">this is a dropdown menu</p>
+                    <p class="dcontent" id="d1">
+                        <a href="the-island.html">All About the Island</a></br><a href="">Island Agriculture</a></br><a href="">Fishing</a></br><a href="">Prominent Locations</a>
+                        <img src="DONOTSUBMITWITHME.jpg" alt="img">
+                    </p>
                 </div>
                 <div class="dropdown">
-                    <span>Panning</span>
-                    <p class="dcontent" id="d2">This is planning</p>
+                    <span>Planning</span>
+                    <p class="dcontent" id="d2">
+                        <a href="planning.html">Plan a trip today!</a></br><a href="">Book a flight!</a></br><a href="">Lodging</a></br><a href="">Car Rentals</a></br><a href="">Other Transport Options</a>
+                        <img src="DONOTSUBMITWITHME.jpg" alt="img">
+                    </p>
                 </div>            
                 <div class="dropdown">
                     <span>Things to Do</span>
-                    <p class="dcontent" id="d3">This is thigns to do</p>
+                    <p class="dcontent" id="d3">
+                        <a href="things.html">Things to do</a></br><a href="sidePages\actvityPage.html">Activities</a></br><a href="sidePages/eventPage.html">Events</a></br><a href="sidePages/sightseeingPage.html">Sightseeing</a>
+                        <img src="DONOTSUBMITWITHME.jpg" alt="img">
+                    </p>
                 </div>
-                <a href="faq.html" id="faq_link">FAQ</a>
+                <a href="faq.html" id="faq_link" class="main">FAQ</a>
             </nav>
         </header>
 
         <!--main image and tagline-->
+        <img src="DONOTSUBMITWITHME.jpg" alt="img" id="span-whole">
+        <h1 id="over-img">Tagline</h1>
 
         <!--image with offset box with more information about booking-->
+        <img src="DONOTSUBMITWITHME.jpg" alt="img" id="box">
+        <p class="over-easy">Mauris dapibus suscipit iaculis. Nunc ex est, placerat non porttitor ac, ultricies ut augue. Vestibulum vel elit a massa elementum ullamcorper.  
+            <button><a href="planning.html">Book Now</a></button>
+        </p>
 
-        <!--Activities section. Figure out how to go through like a gallery, so have js file for going through them. link to activity page with a more option for direction to things to do-->
-
+        <!--Activities section. Figure out how to go through like a gallery-->
+        <section id="act">
+            <h2>Activities</h2>
+            <div id="activity-scroll">
+                <img src="DONOTSUBMITWITHME.jpg" alt="img" class="activity">
+                <img src="DONOTSUBMITWITHME.jpg" alt="img" class="activity">
+                <img src="DONOTSUBMITWITHME.jpg" alt="img" class="activity">
+            </div>
+            <div id="activity-scroll">
+                <p>1-2 lines with title of activity/sightseeing place/event</p>
+                <p>1-2 lines with title of activity/sightseeing place/event</p>
+                <p>1-2 lines with title of activity/sightseeing place/event</p>
+            </div>
+            <p id="arrow">&#11166;</p>
+            <p id="dots">&#9675; &#9679; &#9675;</p>
+        </section>
         <!--image with button underneath-->
+        <section class="on-top">
+            <img src="DONOTSUBMITWITHME.jpg" alt="img" class="big">
+            <a href="the-island.html"><button>Discover Tanitis Wonderful Culture</button></a>
+        </section>
 
         <!--footer. include APA style citation here-->
+
+        <footer>
+            <div>
+                <p>Mauris dapibus suscipit iaculis.</p>
+                <p>Nunc ex est, placerat non porttitor.</p>
+                <p>Vestibulum vel elit a massa elementum.</p>
+                <p>Sollicitudin sem.</p>
+            </div>
+            <div>
+                <p>Mauris dapibus suscipit iaculis.</p>
+                <p>Nunc ex est, placerat non porttitor.</p>
+                <a href="faq.html">FAQ</a>
+            </div>
+        </footer>
     </body>
 </html>
