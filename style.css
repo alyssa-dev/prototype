@@ -173,7 +173,8 @@ nav {
     justify-content: space-around;
 }
 .activity {
-    width: 30%;
+    margin-left: 5%;
+    width: 90%;
     height: 500px;
     border-radius: 100px 100px 0px 0px;
 }
@@ -533,13 +534,11 @@ footer {
     justify-content: space-evenly;
 }
 .locations .item {
-    width: 15%;
-    height: 15%;
-    cursor: pointer;
+    width: 25vh;
+    height: 25vh;
 }
 
 .locations #item p {
-    width: 20%;
     height: fit-content;
     font-size: var(--font-standard);
     text-align: center;
@@ -547,12 +546,12 @@ footer {
 }
 
 .locations button {
-    margin-top: 5%;
-    width: 25%;
-    padding: .5%;
+    margin-top: 8%;
+    width: 150%;
+    padding: 2%;
     font-size: var(--font-standard);
     position: relative;
-    right: -25%;
+    right: -70%;
 }
 
 #header {
